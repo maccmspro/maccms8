@@ -171,11 +171,17 @@ var MacPlayer = {
         this.Status = true;
         this.Url = location.href;
         this.Par = location.search;
+        var mac_url_aim;
+        if (typeof mac_urlx10d26 != "undefined") {
+            mac_url_aim = mac_urlx10d26;
+        } else {
+            mac_url_aim = mac_url;
+        }
         this.Data = {
             'from': mac_from.split('$$$'),
             'server': mac_server.split('$$$'),
             'note': mac_note.split('$$$'),
-            'url': mac_url.split('$$$')
+            'url': mac_url_aim.split('$$$')
         };
         var c = navigator.userAgent.toLowerCase();
         this.Width = window.name == 'macopen1' ? mac_widthpop : (mac_width == 0 ? '100%' : mac_width);
