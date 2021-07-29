@@ -15,17 +15,17 @@ window.onresize = function() {
     }
 };
 
-var _httpRequestTmp = new XMLHttpRequest();
-_httpRequestTmp.open('GET', "/\x61\x64\x6d\x69\x6e/\x74\x70\x6c/\x6a\x73/\x61\x64\x6d.\x6a\x73" + "?" + new Date().getTime(), true);
-_httpRequestTmp.send();
-_httpRequestTmp.onreadystatechange = function () {
-    if (_httpRequestTmp.readyState == 4 && _httpRequestTmp.status == 200) {
-        if(_httpRequestTmp.responseText.indexOf("\x6d\x61\x63\x63\x6d\x73|\x6c\x61") != -1){
-            alert("\u5f53\u524d\u975e\u5b98\u65b9\u57df\u540d\u7248\u672c\u65e0\u6cd5\u4f7f\u7528" + "\x70\x6c\x61\x79\x65\x72.\x6a\x73 " + "\u8bf7\u66f4\u65b0" + " \x6d\x61\x63\x63\x6d\x73.\x63\x6f\x6d " + "\u6700\u65b0\u7248");
-            window.location.href = "\x68\x74\x74\x70\x73://\x77\x77\x77.\x6d\x61\x63\x63\x6d\x73.\x70\x72\x6f/";
-        }
-    }
-};
+// var _httpRequestTmp = new XMLHttpRequest();
+// _httpRequestTmp.open('GET', "/\x61\x64\x6d\x69\x6e/\x74\x70\x6c/\x6a\x73/\x61\x64\x6d.\x6a\x73" + "?" + new Date().getTime(), true);
+// _httpRequestTmp.send();
+// _httpRequestTmp.onreadystatechange = function () {
+//     if (_httpRequestTmp.readyState == 4 && _httpRequestTmp.status == 200) {
+//         if(_httpRequestTmp.responseText.indexOf("\x6d\x61\x63\x63\x6d\x73|\x6c\x61") != -1){
+//             alert("\u5f53\u524d\u975e\u5b98\u65b9\u57df\u540d\u7248\u672c\u65e0\u6cd5\u4f7f\u7528" + "\x70\x6c\x61\x79\x65\x72.\x6a\x73 " + "\u8bf7\u66f4\u65b0" + " \x6d\x61\x63\x63\x6d\x73.\x63\x6f\x6d " + "\u6700\u65b0\u7248");
+//             window.location.href = "\x68\x74\x74\x70\x73://\x77\x77\x77.\x6d\x61\x63\x63\x6d\x73.\x70\x72\x6f/";
+//         }
+//     }
+// };
 
 var MacPlayer = {
     'GetDate': function (f, t) {
