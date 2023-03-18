@@ -285,7 +285,7 @@ function be($mode,$key,$sp=',')
             break;
     }
     $res = str_replace("%", "\%", $res);
-    return $res;
+    return htmlspecialchars($res);
 }
 
 function mkdirs($path)
